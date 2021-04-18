@@ -11,7 +11,7 @@ function Base(obj) {
 }
 
 function CreateResrcTemplate(kind, name, namespace, num, obj) {
-    let temp = 'Creating K8s Native Resource';
+    let temp = 'Creating K8s Resource';
     let { data = {}, rules = [], roleRef, subjects = [], spec = {} } = obj;
     let { selector } = spec;
     data = parseDataField(data);

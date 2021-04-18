@@ -1,0 +1,27 @@
+{
+  "name": "k8s-readme-generator",
+  "version": "1.0.0",
+  "description": "this package detects kuberenetes final yaml and generates readable text to show what this yaml has and does.",
+  "main": "index.js",
+  "scripts": {
+    "run:m": "./node_modules/.bin/nodemon --watch src/json.js --watch src/yaml.js  --exec './.bin/gen -p ./goals -m manifest'",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeeshanalisyed/k8s-readme-generator.git"
+  },
+  "author": "zeeshan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeeshanalisyed/k8s-readme-generator/issues"
+  },
+  "homepage": "https://github.com/zeeshanalisyed/k8s-readme-generator#readme",
+  "dependencies": {
+    "commander": "^7.2.0",
+    "yaml": "^1.10.2"
+  },
+  "devDependencies": {
+    "strip-bom": "^5.0.0"
+  }
+}
